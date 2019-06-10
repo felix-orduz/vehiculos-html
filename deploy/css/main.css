@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, li, a, strong, em, i, b, mark, u, s, cite, sup, small, q, dfn, abbr {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p, span, li, a, strong, em, i, b, mark, u, s, cite, sup, small, q, dfn, abbr, label {
+  font-family: "Source Sans Pro", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.navigationContainer {
+  border-bottom: #e8e8e8 1px solid;
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 0) and (max-width: 640px) {
+  .navigationContainer {
+    display: none;
+  }
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop {
+  height: 100%;
+  font-size: .9rem;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list .listItem {
+  width: auto;
+  font-size: 0.9375rem;
+  padding: 0 .5rem;
+  height: 47px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list .listItem a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list .listItem .btnBooking {
+  background-color: #997f60;
+  margin: 0;
+  border-radius: 0;
+  color: #fff;
+  height: 100%;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list .nav-item {
+  list-style: none;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop.barnavTopRight .list .nav-item a {
+  color: #1c1c1c;
+}
+
+.navigationContainer .container .containerBarnavTop .barnavTop:nth-child(1) {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 0) and (max-width: 640px) {
+  .navigationContainerBottom .container .row .containerBarnavBottom {
+    display: none;
+  }
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .logo {
+  width: 99%;
+  height: auto;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits .list-group .list-group-item {
+  padding: 0;
+  border: 0;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits .list-group .list-group-item .sub {
+  color: #1c1c1c;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits .list-group .list-group-item .sub i {
+  font-size: 1rem;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits .list-group .list-group-item .sub span {
+  font-weight: bolder;
+  font-size: .9rem;
+}
+
+.navigationContainerBottom .container .row .containerBarnavBottom .row .containerLogo .row .benfits .list-group .list-group-item span {
+  font-size: .9rem;
+}
+
+.navigationContainerBottom .container .row .btnBooking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationContainerBottom .container .row .btnBooking .btnBookingSite {
+  background-color: #997f60;
+  border-radius: 50px;
+  color: #fff;
+  height: 42px;
+  font-size: .9rem;
+}
+
+.navigationContainerBottom .containerMenu {
+  border-top: #e8e8e8 1px solid;
+  background-color: #201609;
+}
+
+.navigationContainerBottom .containerMenu .container .navbar {
+  background-color: #201609 !important;
+}
+
+.navigationContainerBottom .containerMenu .container .navbar .navbar-brand img {
+  width: 80px;
+  height: auto;
+}
+
+.navigationContainerBottom .containerMenu .container .navbar .navbar-toggler {
+  border-color: transparent;
+}
+
+.navigationContainerBottom .containerMenu .container .navbar .navbar-toggler .navbar-toggler-icon {
+  width: 1.25em;
+}
+
+.sectionCarouselHome {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.sectionCarouselHome .carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item img {
+  width: 120.5% !important;
+  height: 120.5% !important;
+  margin-left: -10.25%;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption {
+  display: flex;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption.carouselCaption1 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption.carouselCaption1 h1 {
+  text-align: left;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption.carouselCaption1 p {
+  text-align: justify;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption.carouselCaption2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  top: 5%;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption.carouselCaption2 h1 {
+  text-align: center;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 4rem;
+  line-height: 120%;
+  width: 700px;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1rem;
+}
+
+.sectionCarouselHome .carousel .carousel-inner .carousel-item .carousel-caption button {
+  background-color: #997f60;
+  border-radius: 50px;
+  height: 48px;
+  width: 180px;
+  margin: 5px 0px 0px;
+  color: #fff;
+}
+
+.sectionCarouselHome .carousel .carouselControl {
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+
+.sectionCarouselHome .carousel .carouselControl.carousel-control-prev {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  top: 41%;
+  left: 3%;
+}
+
+.sectionCarouselHome .carousel .carouselControl.carousel-control-next {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  top: 41%;
+  right: 3%;
+}
+
+.sectionCarouselHome .carousel:hover .carouselControl {
+  display: flex;
+  transition: 500ms ease-in;
+}
+
+.sectionBenefict {
+  padding: 60px 0px;
+}
+
+.sectionBenefict .container1 .row .containerBenefict .row .col-2 i {
+  font-size: 1.8rem;
+  border: 3px solid #997f60;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #997f60;
+}
+
+.sectionBenefict .container1 .row .containerBenefict .row .col-10 .span h5 {
+  margin: 0 0 25px 0;
+}
+
+.sectionBenefict .container1 .row .containerBenefict .row .col-10 .line {
+  width: 45px;
+  height: 2px;
+  background-color: #997f60;
+  margin: 0 0 25px 0;
+}
+
+.sectionBenefict .container1 .row .containerBenefict .row .col-10 .paragraph {
+  margin: 0 0 60px 0;
+  line-height: 160%;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+.sectionBenefict .row .containerFormReserve {
+  background-color: #000;
+}
+
+.sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm button {
+  height: 89px;
+  color: #fff;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput {
+  height: 100%;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row {
+  height: 100%;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm {
+  padding-right: 0;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm span {
+  padding: 0 0 13px 0;
+  color: #fff;
+  margin: 0 20px 0 0;
+  display: block;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group input {
+  border: 0;
+  background-color: #fff;
+  border-radius: 0;
+  height: 46px;
+  width: calc(100%);
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  bottom: 0;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend .input-group-text {
+  background-color: transparent;
+  border: 0;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend .input-group-text i {
+  font-size: 1.025rem;
+  color: #b4b4b4;
+}
