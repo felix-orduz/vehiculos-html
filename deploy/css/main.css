@@ -314,52 +314,117 @@ p, span, li, a, strong, em, i, b, mark, u, s, cite, sup, small, q, dfn, abbr, la
 }
 
 .sectionBenefict .row .containerFormReserve .row .containerFormInput {
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 0) and (max-width: 640px) {
+  .sectionBenefict .row .containerFormReserve .row .containerFormInput {
+    padding-right: 1.875rem;
+    padding-left: 1.475rem;
+  }
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve {
   height: 100%;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row {
   height: 100%;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row {
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm {
+@media (min-width: 0) and (max-width: 640px) {
+  .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm {
   padding-right: 0;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm span {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm label {
   padding: 0 0 13px 0;
   color: #fff;
   margin: 0 20px 0 0;
   display: block;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group input {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group input {
   border: 0;
   background-color: #fff;
   border-radius: 0;
   height: 46px;
-  width: calc(100%);
+  max-width: calc(100% - 6px);
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend {
+@media (min-width: 0) and (max-width: 640px) {
+  .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group input {
+    max-width: calc(100%);
+  }
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group .input-group-prepend {
+  background-color: transparent;
   position: absolute;
   right: 0;
   top: 0;
-  background-color: transparent;
   bottom: 0;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend .input-group-text {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group .input-group-prepend .input-group-text {
   background-color: transparent;
   border: 0;
 }
 
-.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .form-row .row .inputForm .input-group .input-group-prepend .input-group-text i {
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group .input-group-prepend .input-group-text i {
   font-size: 1.025rem;
   color: #b4b4b4;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row:nth-child(2) {
+  display: none;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .btnReserveForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 30px;
+  padding-top: 29px;
+  background-color: #000;
+}
+
+@media (min-width: 0) and (max-width: 640px) {
+  .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .btnReserveForm {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: .8rem;
+  }
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .btnReserveForm .btnReserve {
+  background-color: #997f60;
+  color: #fff;
+  height: 44px;
+  border-radius: 50px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

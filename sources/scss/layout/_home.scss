@@ -1,3 +1,9 @@
+@mixin responsiveDevicesMdSm {
+    @media (min-width: map-get($grid-breakpoints, "xs")) and (max-width: map-get($grid-breakpoints, "md")){
+        @content;
+    }
+}
+
 // Seccion del carrusel de imagenes.
 .sectionCarouselHome{
     width: 100%;
@@ -146,49 +152,94 @@
                     }
                 }
                 .containerFormInput{
-                    height: 100%;
+                    padding-right: 2.5rem;
+                    @include responsiveDevicesMdSm{
+                        padding-right: 1.875rem;
+                        padding-left: 1.475rem;
+                    }
                     .formReserve{
-                        .form-row{
+                        height: 100%;
+                        .row{
                             height: 100%;
-                            .row{
+                            .form-row{
+                                height: 100%;
                                 display: flex;
-
-                                align-items: center;
+                                flex-direction: column;
                                 justify-content: center;
-                                .inputForm{
-                                    padding-right: 0;
-                                    span{
-                                        padding: 0 0 13px 0;
-                                        color: #fff;
-                                        margin: 0 20px 0 0;
-                                        display: block;
-                                        }
-                                    .input-group{
-                                        input{
-                                            border: 0;
-                                            background-color: map-get($theme-colors, "white");
-                                            border-radius: 0;
-                                            height: 46px;
-                                            width: calc(100%);
-                                        }
-                                        .input-group-prepend{
-                                            position: absolute;
-                                            right: 0;
-                                            top: 0;
-                                            background-color: transparent;
-                                            bottom: 0;
-                                            .input-group-text{
-                                                background-color: transparent;
+                                @include responsiveDevicesMdSm{
+                                    padding-right: 2.5rem;
+                                    padding-left: 2.5rem;
+                                }
+                                .row{
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    .inputForm{
+
+                                        padding-right: 0;
+                                        label{
+                                            padding: 0 0 13px 0;
+                                            color: map-get($theme-colors, "white" );
+                                            margin: 0 20px 0 0;
+                                            display: block;
+                                            }
+                                        .input-group{
+                                            input{
                                                 border: 0;
-                                                i{
-                                                    font-size: 1.025rem;
-                                                    color: #b4b4b4;
+                                                background-color: map-get($theme-colors, "white");
+                                                border-radius: 0;
+                                                height: 46px;
+                                                max-width: calc(100% - 6px);
+                                                @include responsiveDevicesMdSm{
+                                                    max-width: calc(100%);
+                                                }
+                                            }
+                                            .input-group-prepend{
+                                                background-color: transparent;
+                                                position: absolute;
+                                                right: 0;
+                                                top: 0;
+                                                bottom: 0;
+                                                .input-group-text{
+                                                    background-color: transparent;
+                                                    border: 0;
+                                                    i{
+                                                        font-size: 1.025rem;
+                                                        color: #b4b4b4;
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
+                            } 
+                            .form-row:nth-child(2){
+                                display: none;
                             }
+                            .btnReserveForm{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                padding-left: 0;
+                                padding-right: 30px;
+                                padding-top: 29px;
+                                background-color: map-get($theme-colors, "black");
+                                @include responsiveDevicesMdSm{
+                                    padding-left: 2rem;
+                                    padding-bottom: 2rem;
+                                    padding-top: .8rem;
+                                }
+                                .btnReserve{
+                                    background-color: $primary;
+                                    color: map-get($theme-colors, "white");
+                                    height: 44px;
+                                    border-radius: 50px;
+                                    width: 160px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;                                }
+                            }     
                         }
                     }
                 }
