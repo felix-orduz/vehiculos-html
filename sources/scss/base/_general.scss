@@ -16,4 +16,10 @@ p,span,li,a,strong,em,i,b,mark,u,s,cite,sup,small,q,dfn,abbr,label{
     font-family: $font-family-sans-serif;
 }
 
-
+button{
+    outline: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}

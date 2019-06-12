@@ -306,11 +306,11 @@
                 <div class="row">
                     <div class="col-12 col-lg-2 col-xl-2 selectOptionForm">
                         <div class="row">
-                            <div class="col-6 col-lg-12 col-xl-12 containerBtnSeletForm transfer">
-                                <button class="btn btn-block">One-Way Transfer</button>
+                            <div class="col-6 col-lg-12 col-xl-12 containerBtnSeletForm transfer activeBtn" id="transfer">
+                                <button class="btn btn-block" id="btnTransfer">One-Way Transfer</button>
                             </div>
-                            <div class="col-6 col-lg-12 col-xl-12 containerBtnSeletForm service">
-                                <button class="btn btn-block">Hourly Service</button>
+                            <div class="col-6 col-lg-12 col-xl-12 containerBtnSeletForm service" id="service">
+                                <button class="btn btn-block" id="btnService">Hourly Service</button>
                             </div>
                         </div>
                     </div>
@@ -343,13 +343,11 @@
                                         </div>
                                         <div class="col-12 col-lg-3 col-xl-3 inputForm">
                                             <label class="labelForm" for="inlineFormInputGroup">Pick Up Date</label>
-                                            <div class="input-group mb-2">
-                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <i class="fas fa-map-marker-alt"></i>
-                                                    </div>
-                                                </div>
+                                            <div class="input-group date mb-2" id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="col-12 col-lg-3 col-xl-3 inputForm">
@@ -366,7 +364,61 @@
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-10  col-xl-10 form-row align-items-center" id="formService">
-            
+                                    <div class="inputService">
+                                        <label class="labelForm" for="inlineFormInputGroup">Pick Up Time</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inputService">
+                                        <label class="labelForm" for="inlineFormInputGroup">Pick Up Time</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inputService">
+                                        <label class="labelForm" for="inlineFormInputGroup">Pick Up Time</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inputService">
+                                        <label class="labelForm" for="inlineFormInputGroup">Pick Up Time</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="inputService">
+                                        <label class="labelForm" for="inlineFormInputGroup">Pick Up Time</label>
+                                            <div class="input-group mb-2">
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
                                 <div class="col-12  col-lg-2 col-xl-2 btnReserveForm">
                                     <button class="btn btnReserve">
@@ -381,8 +433,10 @@
         </div>
     </section>
 
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/functionsBootsrap.js"></script>
 </body>
 </html>

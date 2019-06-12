@@ -144,10 +144,67 @@
                 .selectOptionForm{
                     .row{
                         .containerBtnSeletForm{
+                            --bg-pseudo : #997f60;
+                            --bg-pseudo-inactive: #000; //Variable que almacena el color primario
+                            position: relative;
                             button{
                                 height: 89px;
-                                color: #fff;
+                                color:  map-get($theme-colors, "white");
+                                
                             }
+                            &.transfer::before,&.transfer::after{
+                                content: '';
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                display: block;
+                                border-width: 14px 0px 15px 16px;
+                                border-style: solid;
+                                border-color: transparent var(--bg-pseudo);
+                                right: -14px;
+                                z-index: 1000;
+                                top: 28px;
+                            }
+                            &.transfer::before{
+                                content: '';
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                display: block;
+                                border-width: 14px 0px 15px 16px;
+                                border-style: solid;
+                                border-color: transparent var(--bg-pseudo);
+                                right: -15px;
+                                z-index: 1000;
+                                top: 28px;
+                            }
+                            &.service::before,&.service::after{
+                                content: '';
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                display: block;
+                                border-width: 14px 0px 15px 16px;
+                                border-style: solid;
+                                border-color: transparent var(--bg-pseudo-inactive);
+                                right: -14px;
+                                z-index: 1000;
+                                top: 28px;   
+                            }
+                            &.service::before{
+                                content: '';
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                display: block;
+                                border-width: 14px 0px 15px 16px;
+                                border-style: solid;
+                                border-color: transparent var(--bg-pseudo-inactive);
+                                right: -15px;
+                                z-index: 1000;
+                                top: 28px;
+                            }
+
                         }
                     }
                 }
@@ -214,7 +271,56 @@
                                 }
                             } 
                             .form-row:nth-child(2){
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-start;
+                                background-color: map-get($theme-colors, "black" );
+                                padding-left: 25px;
                                 display: none;
+                                @include responsiveDevicesMdSm{
+                                   padding-left: 40px;
+                                }
+                                .inputService{
+                                    width: 17.5%;
+                                    margin-right: 2.5%;
+                                    @include responsiveDevicesMdSm{
+                                        width: calc(100%);
+                                        margin-right: 0;
+                                    }
+                                    label{
+                                        padding: 0 0 13px 0;
+                                        color: map-get($theme-colors, "white" );
+                                        margin: 0 20px 0 0;
+                                        display: block;
+                                        }
+                                    .input-group{
+                                        input{
+                                            border: 0;
+                                            background-color: map-get($theme-colors, "white");
+                                            border-radius: 0;
+                                            height: 46px;
+                                            max-width: calc(100% - 6px);
+                                            @include responsiveDevicesMdSm{
+                                                max-width: calc(100%);
+                                            }
+                                        }
+                                        .input-group-prepend{
+                                            background-color: transparent;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 0;
+                                            bottom: 0;
+                                            .input-group-text{
+                                                background-color: transparent;
+                                                border: 0;
+                                                i{
+                                                    font-size: 1.025rem;
+                                                    color: #b4b4b4;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             .btnReserveForm{
                                 display: flex;
@@ -246,4 +352,7 @@
             }
         }
     }
+}
+.activeBtn{
+    background-color: $primary;
 }
