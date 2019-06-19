@@ -23,3 +23,8 @@ button{
     outline: 0;
     box-shadow: none;
 }
+
+// Owl carousel
+.owl-carousel .owl-nav .owl-prev,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-dot {
+    font-family: 'fontAwesome';
+}

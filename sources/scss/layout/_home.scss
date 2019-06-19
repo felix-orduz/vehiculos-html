@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin  responsiveDevicesXsSm{
+    @media (min-width:map-get($grid-breakpoints, "xs")) and (max-width: map-get($grid-breakpoints, "sm" )){
+        @content;
+    }
+}
 
 // Seccion del carrusel de imagenes.
 .sectionCarouselHome{
@@ -14,7 +19,7 @@
         width: 100%;
         height: 100%;
         .carousel-inner{
-            .carousel-item{
+            .carousel-item:nth-child(1){
                 width: 100%;
                 height: auto;
                 overflow-x: hidden;
@@ -23,31 +28,39 @@
                     width: 120.5% !important;
                     height: 120.5% !important;
                     margin-left: -10.25%;
+                    @include responsiveDevicesXsSm{
+                        width: 215.5% !important;
+                        height: 231px !important;
+                        margin-left: -56.25%;
+                    }
                 }
                 .carousel-caption{
                     display: flex;
-                    &.carouselCaption1{
+                    top: 0;
+                    align-items: center;
+                    .carouselCaption1{
+                        display: flex;
                         flex-direction: column;
                         align-items: flex-start;
                         justify-content: center; 
                         position: absolute;
-                        top: 0;
                         h1{
                             text-align: left;
+                            @include responsiveDevicesXsSm{
+                                font-size: 2rem;
+                            }
+                        }
+                        .line{
+                            width: 85px;
+                            height: 3px;
+                            margin: 20px auto 25px auto;
+                            background-color: $primary;
                         }
                         p{
                             text-align: justify;
-                        }
-                    }
-                    &.carouselCaption2{
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        position: absolute;
-                        top: 0;
-                        top: 5%;
-                        h1{
-                            text-align: center;
+                            @include responsiveDevicesXsSm{
+                                display: none;
+                            }
                         }
                     }
                     h1{
@@ -64,6 +77,68 @@
                         height: 48px;
                         width: 180px;
                         margin: 5px 0px 0px;
+                        color: map-get($theme-colors, "white" );
+                        @include responsiveDevicesXsSm{
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .carousel-item:nth-child(2){
+                width: 100%;
+                height: auto;
+                overflow-x: hidden;
+                position: relative;
+                img{
+                    width: 120.5% !important;
+                    height: 120.5% !important;
+                    margin-left: -10.25%;
+                    @include responsiveDevicesXsSm{
+                        width: 215.5% !important;
+                        height: 231px !important;
+                        margin-left: -56.25%;
+                    }
+                }
+                .carousel-caption{
+                    display: flex;
+                    top: 0;
+                    align-items: center;
+                    justify-content: center;
+                    .carouselCaption2{
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        h1{
+                            text-align: center;
+                            @include responsiveDevicesXsSm{
+                                font-size: 2rem;
+                            }
+                        }
+                        .line{
+                            width: 85px;
+                            height: 3px;
+                            margin: 20px auto 25px auto;
+                            background-color: $primary;
+                        }
+                    }
+                    h1{
+                        font-size: 4rem;
+                        line-height: 120%;
+                        width: 700px;
+                    }
+                    p{
+                        font-size: 1rem;
+                        @include responsiveDevicesXsSm{
+                            display: none;
+                        }
+                    }
+                    button{
+                        background-color: $primary;
+                        border-radius: 50px;
+                        height: 48px;
+                        width: 180px;
+                        margin: 5px 0px 0px;
                         color: map-get($theme-colors, "white" )
                     }
                 }
@@ -73,6 +148,10 @@
             width: 70px;
             height: 70px;
             display: none;
+            @include responsiveDevicesXsSm{
+                width: 45px;
+                height: 45px;
+            }
             &.carousel-control-prev{
                 border-radius: 50%;
                 border: 3px solid #fff;
@@ -115,22 +194,32 @@
                         }
                     }
                     .col-10{
-                        .span{
-                            h5{
+                        @include responsiveDevicesMdSm{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                        }
+                        .contBenefict{
+                            @include responsiveDevicesXsSm{
+                                width: 90%;
+                            }
+                            .span{
+                                h5{
+                                    margin: 0 0 25px 0;
+                                }
+                            }
+                            .line{
+                                width: 45px;
+                                height: 2px;
+                                background-color: $primary;
                                 margin: 0 0 25px 0;
                             }
-                        }
-                        .line{
-                            width: 45px;
-                            height: 2px;
-                            background-color: $primary;
-                            margin: 0 0 25px 0;
-                        }
-                        .paragraph{
-                            margin: 0 0 60px 0;
-                            line-height: 160%;
-                            font-size: 1rem;
-                            padding-right: 10px;
+                            .paragraph{
+                                margin: 0 0 60px 0;
+                                line-height: 160%;
+                                font-size: 1rem;
+                                padding-right: 10px;
+                            }
                         }
                     }
                 }
@@ -164,6 +253,16 @@
                                 right: -14px;
                                 z-index: 1000;
                                 top: 28px;
+                                @include responsiveDevicesXsSm{
+                                    right: 68px;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
+                                @include responsiveDevicesMdSm{
+                                    right: 68px;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
                             }
                             &.transfer::before{
                                 content: '';
@@ -177,6 +276,16 @@
                                 right: -15px;
                                 z-index: 1000;
                                 top: 28px;
+                                @include responsiveDevicesXsSm{
+                                    right: 68px;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
+                                @include responsiveDevicesMdSm{
+                                    right: 68px;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
                             }
                             &.service::before,&.service::after{
                                 content: '';
@@ -189,7 +298,17 @@
                                 border-color: transparent var(--bg-pseudo-inactive);
                                 right: -14px;
                                 z-index: 1000;
-                                top: 28px;   
+                                top: 28px;
+                                @include responsiveDevicesXsSm{
+                                    right: 42%;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
+                                @include responsiveDevicesMdSm{
+                                    right: 42%;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }   
                             }
                             &.service::before{
                                 content: '';
@@ -203,6 +322,16 @@
                                 right: -15px;
                                 z-index: 1000;
                                 top: 28px;
+                                @include responsiveDevicesXsSm{
+                                    right: 42%;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
+                                @include responsiveDevicesMdSm{
+                                    right: 42%;
+                                    top: 92%;
+                                    transform: rotate(90deg);
+                                }
                             }
 
                         }
@@ -355,4 +484,146 @@
 }
 .activeBtn{
     background-color: $primary;
+}
+.sectionOurFleet{
+    margin: 60px 0px;
+    position: relative;
+    .container{
+        .row{
+            .ourFleet{
+                position: relative;
+                .titleOurFleet{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h5{
+                        font-size: 1.5rem;
+                        margin: 0 0 21px 0;
+                    }
+                    .underlineOurFleet{
+                        width: 55px;
+                        height: 2px;
+                        background-color: $primary;
+                        margin: 0 0 25px 0;
+                    }
+                    .descriptionOurFleet{
+                        width: 80%;
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+                }
+                .carouselOurFleet{
+                    .owl-fleet{
+                        position: initial;
+                        .item{
+                            .card{
+                                position: relative;
+                                height: 368px;
+                                @include responsiveDevicesXsSm{
+                                    height: auto;
+                                }
+                                img{
+
+                                }
+                                
+                                .card-title{
+                                    border-top: 1px solid rgba(0,0,0,0.125);
+                                    position: relative;
+                                    padding: 0px 30px;
+                                    margin-bottom: 0px;
+                                    .ourPrice{
+                                        background-color: $primary;
+                                        font-size: 1rem;
+                                        color: map-get($theme-colors, "white");
+                                        padding: 8px 12px;
+                                        display: table;
+                                        margin: -20px 0 25px 0;
+                                        z-index: 99;
+                                        position: relative;
+                                        height: 39px;
+                                    }
+                                    h4{
+                                        font-size: 1.25rem;
+                                        margin: 0 0 20px 0;
+                                        width: 90%;
+                                        a{
+                                            text-decoration: none;
+                                            color: map-get($theme-colors, "dark");
+                                        }
+                                    }
+                                    .line{
+                                        width: 45px;
+                                        height: 2px;
+                                        margin: 0px 0 20px 0;
+                                        background-color: $primary;
+                                    }
+                                }
+                                .card-body{
+                                    position: relative;
+                                    padding: 0px 30px;
+                                    .list-group{
+                                        margin-bottom: 30px;
+                                        .list-group-item{
+                                            padding: .1rem 0px;
+                                            border: 0;
+                                            i{
+                                                color: $primary;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .owl-nav{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            @include responsiveDevicesXsSm{
+                                display: none;
+                            }
+                            button{
+                                width: 37px;
+                                height: 37px;
+                                background-color: map-get($theme-colors, "white" );
+                                border: 1px solid rgba(0,0,0,0.125);
+                                border-radius: 50px;
+                                position: relative;
+                                span{
+                                    font-size: 2.5rem;
+                                    display: block;
+                                    position: absolute;
+                                    top: -16px;
+                                    left: 12px;
+                                    padding: 0;
+                                    height: 1.5rem;
+                                }
+                            }
+                            button:hover span{
+                                color: #444;
+                            }
+                        }
+                        .owl-dots{
+                            .owl-dot{
+                                margin: 40px 0 0 0;
+                                cursor: pointer;
+                                span{
+                                    background-color: $primary;
+                                    border: 3px solid $primary;
+                                    width: 15px;
+                                    height: 15px;
+                                    margin: 5px 2px;
+                                }
+                                &.active{
+                                    span{
+                                        background-color: map-get($theme-colors, "white" );
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
