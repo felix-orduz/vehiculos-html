@@ -204,7 +204,7 @@
                         }
                         .contBenefict{
                             @include responsiveDevicesXsSm{
-                                width: 90%;
+                                width: 80%;
                             }
                             .span{
                                 h5{
@@ -230,10 +230,14 @@
         }
     }
     .row{
+        max-width: 100%;
+        margin: 0;
         .containerFormReserve{
             background-color: map-get($theme-colors, "black");
+            padding: 0;
             .row{
                 .selectOptionForm{
+                    padding: 0;
                     .row{
                         .containerBtnSeletForm{
                             --bg-pseudo : #997f60;
@@ -257,12 +261,12 @@
                                 z-index: 1000;
                                 top: 28px;
                                 @include responsiveDevicesXsSm{
-                                    right: 68px;
+                                    right: 100px;
                                     top: 92%;
                                     transform: rotate(90deg);
                                 }
                                 @include responsiveDevicesMdSm{
-                                    right: 68px;
+                                    right: 100px;
                                     top: 92%;
                                     transform: rotate(90deg);
                                 }
@@ -280,18 +284,21 @@
                                 z-index: 1000;
                                 top: 28px;
                                 @include responsiveDevicesXsSm{
-                                    right: 68px;
+                                    right: 100px;
                                     top: 92%;
                                     transform: rotate(90deg);
                                 }
                                 @include responsiveDevicesMdSm{
-                                    right: 68px;
+                                    right: 100px;
                                     top: 92%;
                                     transform: rotate(90deg);
                                 }
                             }
                             &.service{
                                 margin-left: -4px;
+                                @include responsiveDevicesXsSm{
+                                    margin-left: 0;
+                                }
                             }
                             &.service::before,&.service::after{
                                 content: '';
@@ -361,6 +368,7 @@
                                 @include responsiveDevicesMdSm{
                                     padding-right: 2.5rem;
                                     padding-left: 2.5rem;
+                                    padding-top: 10px;
                                 }
                                 .row{
                                     height: 100%;
@@ -737,7 +745,7 @@
                 margin: 0 0 60px 0;
                 &.paragraphAbout{
                     @include responsiveDevicesXsSm{
-                        padding: 0px 0px 0px 15px;
+                        padding: 0px 15px 0px 15px;
                     }
                     .titleSection{
                         display: flex;

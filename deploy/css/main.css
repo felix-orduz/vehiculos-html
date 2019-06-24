@@ -421,7 +421,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 500px) {
   .sectionBenefict .container1 .row .containerBenefict .row .col-10 .contBenefict {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -443,8 +443,18 @@ button:focus {
   padding-right: 10px;
 }
 
+.sectionBenefict .row {
+  max-width: 100%;
+  margin: 0;
+}
+
 .sectionBenefict .row .containerFormReserve {
   background-color: #000;
+  padding: 0;
+}
+
+.sectionBenefict .row .containerFormReserve .row .selectOptionForm {
+  padding: 0;
 }
 
 .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm {
@@ -474,7 +484,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 500px) {
   .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::before, .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::after {
-    right: 68px;
+    right: 100px;
     top: 92%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -483,7 +493,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 640px) {
   .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::before, .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::after {
-    right: 68px;
+    right: 100px;
     top: 92%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -506,7 +516,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 500px) {
   .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::before {
-    right: 68px;
+    right: 100px;
     top: 92%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -515,7 +525,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 640px) {
   .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.transfer::before {
-    right: 68px;
+    right: 100px;
     top: 92%;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -524,6 +534,12 @@ button:focus {
 
 .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service {
   margin-left: -4px;
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+  .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service {
+    margin-left: 0;
+  }
 }
 
 .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service::before, .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service::after {
@@ -620,6 +636,7 @@ button:focus {
   .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row {
     padding-right: 2.5rem;
     padding-left: 2.5rem;
+    padding-top: 10px;
   }
 }
 
@@ -1052,7 +1069,7 @@ button:focus {
 
 @media (min-width: 0) and (max-width: 500px) {
   .sectionAbout .container .row .content-about.paragraphAbout {
-    padding: 0px 0px 0px 15px;
+    padding: 0px 15px 0px 15px;
   }
 }
 
