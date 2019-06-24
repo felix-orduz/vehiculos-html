@@ -521,6 +521,10 @@ button:focus {
   }
 }
 
+.sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service {
+  margin-left: -4px;
+}
+
 .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service::before, .sectionBenefict .row .containerFormReserve .row .selectOptionForm .row .containerBtnSeletForm.service::after {
   content: '';
   height: 0;
@@ -635,6 +639,10 @@ button:focus {
   display: block;
 }
 
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group.mb-2 {
+  margin-bottom: 0 !important;
+}
+
 .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group input {
   border: 0;
   background-color: #fff;
@@ -665,6 +673,11 @@ button:focus {
 .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group .input-group-prepend .input-group-text i {
   font-size: 1.025rem;
   color: #b4b4b4;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row .row .inputForm .input-group .custom-select {
+  height: 46px;
+  border-radius: 0;
 }
 
 .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row:nth-child(2) {
@@ -731,6 +744,11 @@ button:focus {
 .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row:nth-child(2) .inputService .input-group .input-group-prepend .input-group-text i {
   font-size: 1.025rem;
   color: #b4b4b4;
+}
+
+.sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .form-row:nth-child(2) .inputService .input-group .custom-select {
+  height: 46px;
+  border-radius: 0;
 }
 
 .sectionBenefict .row .containerFormReserve .row .containerFormInput .formReserve .row .btnReserveForm {
