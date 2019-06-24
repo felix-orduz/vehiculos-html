@@ -215,7 +215,7 @@ button:focus {
 @media (min-width: 0) and (max-width: 500px) {
   .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(1) img {
     width: 215.5% !important;
-    height: 231px !important;
+    height: 320px !important;
     margin-left: -56.25%;
   }
 }
@@ -232,6 +232,7 @@ button:focus {
   align-items: flex-start;
   justify-content: center;
   position: absolute;
+  width: 80%;
 }
 
 .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(1) .carousel-caption .carouselCaption1 h1 {
@@ -302,7 +303,7 @@ button:focus {
 @media (min-width: 0) and (max-width: 500px) {
   .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(2) img {
     width: 215.5% !important;
-    height: 231px !important;
+    height: 320px !important;
     margin-left: -56.25%;
   }
 }
@@ -319,6 +320,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   position: absolute;
+  width: 80%;
 }
 
 .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption .carouselCaption2 h1 {
@@ -341,7 +343,6 @@ button:focus {
 .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption h1 {
   font-size: 4rem;
   line-height: 120%;
-  width: 700px;
 }
 
 .sectionCarouselHome .carousel .carousel-inner .carousel-item:nth-child(2) .carousel-caption p {
