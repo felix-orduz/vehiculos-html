@@ -6,6 +6,15 @@ const transfer = document.getElementById('transfer')
 const service = document.getElementById('service')
 const fTransfer = document.getElementById('formTransfer')
 const fService = document.getElementById('formService')
+// Año footer
+const yearCopy = document.getElementById('year');
+
+// Funcion mostrar fecha
+let getYear = function(c){
+    let d = new Date();
+    let y = d.getFullYear();
+    yearCopy.innerHTML = y;
+}
 
 //Evento boton One-way transfer
 btnTransfer.addEventListener('click', function(){
@@ -28,3 +37,6 @@ btnService.addEventListener('click', function(){
     fService.style.display = 'flex'
     
 })
+
+// Evento mostrar fecha en footer
+yearCopy.addEventListener('load', getYear())

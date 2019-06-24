@@ -19,6 +19,10 @@ p,span,li,a,strong,em,i,b,mark,u,s,cite,sup,small,q,dfn,abbr,label{
 button{
     outline: none;
 }
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
 .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: none;

@@ -53,13 +53,14 @@
                         .line{
                             width: 85px;
                             height: 3px;
-                            margin: 20px auto 25px auto;
+                            margin: 20px 0px;
                             background-color: $primary;
                         }
                         p{
                             text-align: justify;
+                            //display: flex !important;
                             @include responsiveDevicesXsSm{
-                                display: none;
+                                display: none !important;
                             }
                         }
                     }
@@ -524,7 +525,7 @@
                                     height: auto;
                                 }
                                 img{
-
+                                    position: relative;
                                 }
                                 
                                 .card-title{
@@ -624,6 +625,501 @@
                     }
                 }
             }
+        }
+    }
+}
+.sectionTestimonial{
+    background-image: url('../images/testimonial/image25.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+    padding: 60px 0;
+    color: map-get($theme-colors, "white" );
+    .container{
+        .row{
+            .titleSection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h5{
+                    font-size: 1.5rem;
+                    margin: 0 0 21px 0;
+                }
+                .line{
+                    width: 55px;
+                    height: 2px;
+                    margin: 0px 0 20px 0;
+                    background-color: $primary;
+                }
+            }
+            .item{
+                padding: 35px 30px 0 30px;
+                @include responsiveDevicesXsSm{
+                    padding: 10px 30px 0 30px;
+                }
+                .pTestimonial{
+                    font-size: 1.125rem;
+                    position: relative;
+                    line-height: 160%;
+                    text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
+                    position: relative;
+                    display: block;
+                    @include responsiveDevicesXsSm{
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                    .quotes{
+                        font-size: 10rem;
+                        color: $primary;
+                        position: absolute;
+                        font-style: normal;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        @include responsiveDevicesXsSm{
+                            display: none !important;
+                        }
+                    }
+                    .quotes:nth-child(1){
+                        top: 30px;
+                        left: -68px;
+                    }
+                    .quotes:nth-child(2){
+                        bottom: -57px;
+                        right: -50px;
+                    }
+                }
+                .userTestimonial{
+                    .imgTestimonialUser{
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        margin: 20px auto;
+                    }
+                    .credentialUsr{
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font-size: 100%;
+                        font: inherit;
+                        vertical-align: baseline;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.sectionAbout{
+    .container{
+        .row{
+            .content-about{
+                padding: 0px 15px 0px 0px;
+                margin: 0 0 60px 0;
+                &.paragraphAbout{
+                    @include responsiveDevicesXsSm{
+                        padding: 0px 0px 0px 15px;
+                    }
+                    .titleSection{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        h5{
+                            font-size: 1.5rem;
+                            margin: 0 0 25px 0;
+                        }
+                        .line{
+                            width: 55px;
+                            height: 2px;
+                            margin: 0px 0 20px 0;
+                            background-color: $primary;
+                        }
+                    }
+                    .paragraph{
+                        p{
+                            font-size: 1rem;
+                            color: #424242;
+                            margin: 0 0 25px 0;
+                        }
+                        .btnAboutUs{
+                            background-color: $primary;
+                            color: map-get($theme-colors, "white" );
+                            border-radius: 50px;
+                            padding: 10px 35px;
+                            font-size: 1rem;
+                            i{
+                                font-size: .7rem;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                &.videoAbout{
+                    background-image: url('../images/aboutUs/image26.jpg');
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    @include responsiveDevicesXsSm{
+                        display: none;
+                        margin: 0;
+                    }
+                    .video{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include responsiveDevicesXsSm{
+                            display: none;
+                            margin: 0;
+                        }
+                        a{
+                            text-decoration: none;
+                            i{
+                                color: map-get($theme-colors, "white" );
+                                font-size: 2.5rem;
+                                width: 90px;
+                                height: 90px;
+                                border: 3px solid #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal{
+        .modal-dialog-centered{
+            .modal-content{
+                height: 360px;
+                .modal-body{
+                    padding: 0;
+                    margin-bottom: 0;
+                    .close{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 45px;
+                        height: 45px;
+                        background-color: $primary;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 9999;
+                        span{
+                            color: map-get($theme-colors, "white" );
+                            font-size: 1.5rem;
+                        }
+                    }
+                    iframe{
+                        width: 100%;
+                        height: 360px;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.sectionOnlineBook{
+    background-image: url('../images/onlineBook/image10.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+    margin: 0 0 60px 0;
+    .container{
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .sectionTitle{
+                h3{
+                    font-size: 2.125rem;
+                    margin: 0 auto 30px auto;
+                    text-align: center;
+                    width: 70%;
+                    line-height: 120%;
+                    color: map-get($theme-colors , "white" );
+                    @include responsiveDevicesXsSm{
+                        width: 90%;
+                        font-size: 1.375rem;
+                    }
+                }
+                .line{
+                    background-color: $primary;
+                    width: 85px;
+                    height: 3px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span{
+                    line-height: 160%;
+                    font-size: 16px;
+                    margin: 0 0 30px 0;
+                    color: map-get($theme-colors, "white" );
+                    text-align: center;
+                }
+                .btn{
+                    background-color: $primary;
+                    color: map-get($theme-colors, "white" );
+                    border-radius: 50px;
+                    padding: 10px 35px;
+                    font-size: 1rem;
+                    width: 187px;
+                }
+            }
+        }
+    }
+}
+.sectionLatestNews{
+    position: relative;
+    position: relative;
+    margin: 0 auto 60px auto;
+    .container{
+        .row{
+            .sectionTitle{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h5{
+                    font-size: 1.5rem;
+                    margin: 0 0 21px 0;
+                    text-align: center;
+                    width: 70%;
+                    line-height: 120%;
+                }
+                .line{
+                    background-color: $primary;
+                    width: 55px;
+                    height: 2px;
+                    margin: 0 auto 30px auto;
+                }
+            }
+            .carouselNews{
+                position: initial !important;
+                .owl-news{
+                    .item{
+                        .card{
+                            .card-title{
+                                padding:  1.5rem 1.5625rem;
+                                margin-bottom: 0;
+                                a{
+                                    text-decoration: none;
+                                    color: #424242;
+                                    h4{
+                                        font-size: 1.0625rem;
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                
+                                &.cardTitle2{
+                                    padding: .5rem 1.5625rem;
+                                    border-top: 1px solid rgba(0,0,0,0.125);
+                                    border-bottom: 1px solid rgba(0,0,0,0.125);
+                                    .row{
+                                        .col-12{
+                                            i{
+                                                color: $primary;
+                                            }
+                                            .fa-comments{
+                                                margin-right: 10px;
+                                            }   
+                                            span{
+                                                font-size: .94rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .card-body{
+                                padding:  1.5625rem;
+                                p{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .owl-nav{
+                        position: absolute;
+                        top: -100px;
+                        right: 0;
+                        @include responsiveDevicesXsSm{
+                            display: none;
+                        }
+                        button{
+                            width: 37px;
+                            height: 37px;
+                            background-color: map-get($theme-colors, "white" );
+                            border: 1px solid rgba(0,0,0,0.125);
+                            border-radius: 50px;
+                            position: relative;
+                            span{
+                                font-size: 2.5rem;
+                                display: block;
+                                position: absolute;
+                                top: -16px;
+                                left: 12px;
+                                padding: 0;
+                                height: 1.5rem;
+                            }
+                        }
+                        button:hover span{
+                            color: #444;
+                        }
+                    }
+                    .owl-dots{
+                        .owl-dot{
+                            margin: 40px 0 0 0;
+                            cursor: pointer;
+                            span{
+                                background-color: $primary;
+                                border: 3px solid $primary;
+                                width: 15px;
+                                height: 15px;
+                                margin: 5px 2px;
+                            }
+                            &.active{
+                                span{
+                                    background-color: map-get($theme-colors, "white" );
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: map-get($theme-colors, "black" );
+    color: map-get($theme-colors, "white");
+    padding: 70px 0 0 0;
+    .container{
+        .row{
+            .containerFooter{
+                @include responsiveDevicesXsSm{
+                    padding-bottom: 2.2rem;
+                }
+                .section{
+                    .cardTitle{
+                        h5{
+                            text-transform: uppercase;
+                            font-size: 0.875rem;
+                            margin: 0 0 25px 0;
+                        }
+                        .line{
+                            height: 2px;
+                            margin: 0 0 25px 0;
+                            width: 55px;
+                            background-color: $primary;
+                        }
+                    }
+                    .containerSectionFooter{
+                        .paragraph{
+                            font-size: 0.9375rem;
+                        }
+                        .input-group{
+                            input{
+                                height: 43px;
+                                background-color: map-get($theme-colors, "white" );
+                                border-radius: 1px;
+                                margin: 0 0 20px 0;
+                            }
+                        }
+                        button{
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 0px 20px;
+                            border-radius: 50px;
+                            color: map-get($theme-colors, "white");
+                            background-color: $primary;
+                            height: 38px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            i{
+                                margin-left: 7px;
+                                font-size: 1.05rem;
+                            }
+                        }
+                        .list-group-flush{
+                            .list-group-item{
+                                background-color: transparent;
+                                border: 0;
+                                padding: 0rem 0rem .75rem 0rem;
+                                .row{
+                                    .col-2{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        i{
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+                                    .col-10{
+                                        display: flex;
+                                        flex-direction: column;
+                                        span{
+                                            font-size: 0.9375rem;
+                                        }
+                                        .phone,.email{
+                                            font-size: 1.125rem;
+                                        }
+                                        .date{
+                                            color: #838383;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        background-color: #3b3b3b;
+        margin: 45px 0 0 0;
+    }
+    .footerSocialNetwork{
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .social{
+            padding: 0 0 25px 0;
+            a{
+                text-decoration: none;
+                i{
+                    color: map-get($theme-colors, "white" );
+                    margin-left: 12.5px;
+                    margin-right: 12.5px;
+                    font-size: 1.01rem;
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            p{
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+            
         }
     }
 }
